@@ -1,5 +1,6 @@
 import { Anchor, Text, Title } from '@mantine/core';
 import classes from './Welcome.module.css';
+import Link from 'next/link'
 
 export function Welcome() {
   return (
@@ -18,6 +19,7 @@ export function Welcome() {
         </Anchor>
         . To get started edit page.tsx file.
       </Text>
+      <Link href="/dashboard">Dashboard</Link>
     </>
   );
 }
