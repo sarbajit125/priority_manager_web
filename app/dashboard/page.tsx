@@ -15,8 +15,11 @@ import {
   Box
 } from '@mantine/core';
 import bgImg from '../../public/assests/bg.jpg';
+import SummaryAccordion from '@/components/SummaryAccordion/SummaryAccordion';
 
 export default function Page() {
+
+
   return (
     <Container fluid>
       <BackgroundImage
@@ -59,34 +62,7 @@ export default function Page() {
         </Stack>
         <SimpleGrid cols={2}>
           <Paper shadow="sm" p="xl" radius={'md'}>
-            <Group>
-              <IconChecklist />
-              <Text>My Tasks</Text>
-            </Group>
-            <Group>
-                <ActionIcon variant='transparent'>
-                    <IconChevronUp style={{ color: 'gray', width: '18px', height: '18px' }} />
-                </ActionIcon>
-                <Badge color="cyan">In progress</Badge>
-                <IconPointFilled />
-                6 tasks
-            </Group>
-            <Group>
-                <ActionIcon variant='transparent'>
-                    <IconChevronUp style={{ color: 'gray', width: '18px', height: '18px' }} />
-                </ActionIcon>
-                <Badge color="gray">To Do</Badge>
-                <IconPointFilled />
-                2 tasks
-            </Group>
-            <Group>
-                <ActionIcon variant='transparent'>
-                    <IconChevronUp style={{ color: 'gray', width: '18px', height: '18px' }} />
-                </ActionIcon>
-                <Badge color="orange">Upcoming</Badge>
-                <IconPointFilled />
-                1 tasks
-            </Group>
+            <SummaryAccordion />
           </Paper>
           <Paper shadow="sm" p="xl" radius={'md'}>
             <Group>
