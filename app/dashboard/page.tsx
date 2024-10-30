@@ -28,7 +28,7 @@ export default function Page() {
         }
         radius={'md'}
       >
-        <Stack>
+        <Stack p={'md'}>
           <Text size="sm">{dayjs().format('ddd, MMM D')}</Text>
           <Text size="xl" fw={500}>
             Hello Courtney
@@ -60,7 +60,7 @@ export default function Page() {
             </Button>
           </Group>
         </Stack>
-        <SimpleGrid cols={2}>
+        <SimpleGrid cols={2} p={'md'}>
           <Paper shadow="sm" p="xl" radius={'md'}>
             <SummaryAccordion />
           </Paper>

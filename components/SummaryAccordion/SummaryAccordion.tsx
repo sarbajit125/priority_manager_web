@@ -24,19 +24,19 @@ const SummaryAccordion = () => {
       <Accordion.Item value="progress" key={'progress'}>
         <Accordion.Control>{setAccordionLabel('IN PROGRESS', progressData.length)}</Accordion.Control>
         <Accordion.Panel>
-            <SummaryTable tableData={progressData} headers={headersArr} />
+            <SummaryTable tableData={progressData} headers={headersArr} type={'IN PROGRESS'} />
         </Accordion.Panel>
       </Accordion.Item>
       <Accordion.Item value="todo" key={'todo'}>
         <Accordion.Control>{setAccordionLabel('TO DO', toData.length)}</Accordion.Control>
         <Accordion.Panel>
-            <SummaryTable tableData={toData} headers={headersArr} />
+            <SummaryTable tableData={toData} headers={headersArr} type={'TO DO'} />
         </Accordion.Panel>
       </Accordion.Item>
       <Accordion.Item value="upcoming" key={'upcoming'}>
         <Accordion.Control>{setAccordionLabel('UPCOMING', upcomingData.length)}</Accordion.Control>
         <Accordion.Panel>
-            <SummaryTable tableData={upcomingData} headers={headersArr} />
+            <SummaryTable tableData={upcomingData} headers={headersArr} type={'UPCOMING'} />
         </Accordion.Panel>
       </Accordion.Item>
     </Accordion>
